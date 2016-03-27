@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************************
+*****   Reset   **************************************
+*****************************************************/
+*, a, abbr, acronym, address, area, article, aside, b, applet, audio 
+b, bdo, big, blockquote, body, button, center, caption, canvas, 
+caption, cite, code, col, colgroup, dd, del, details, dfn, div, 
+dd, dl, dt, em, embed, figcaption, figure, fieldset, footer, 
+form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, 
+html, i, iframe, images, img, ins, kbd, label, legend, li, 
+map, mark, menu, navigation, object, ol, output, p, param, pre, 
+q, ruby, samp, section, small, span, strong, strike, sub, summary, 
+sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, 
+tt, u, ul, var, video {
+	border:0;
+	margin:0; 
+	padding:0; 
+	vertical-align:baseline;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+* {
+	font-family: proxima-nova, sans-serif;
+}
+
+body {
+	background-color: #f2f2f2;
+	margin: auto;
+	width: 100%;
+}
+
+.header {
+	margin: auto;
+	width: 100%;
+}
+
+#logo {
+	padding: 0.5%;
+}
+
+.nav li {
+	display: inline-block;
+	font-family: "Helvetica, sans-serif";
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.content {
+	margin: auto;
+	width: 960px;
+}
+
+	.caption-style-4{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+
+	.caption-style-4 li{
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.caption-style-4 li:hover .caption{
+		opacity: 1;
+	}
+
+	.caption-style-4 li:hover img{
+		opacity: 1;
+		transform: scale(1.15,1.15);
+		-webkit-transform:scale(1.15,1.15);
+		-moz-transform:scale(1.15,1.15);
+		-ms-transform:scale(1.15,1.15);
+		-o-transform:scale(1.15,1.15);
+	}
+
+
+	.caption-style-4 img{
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		z-index: 4;
+	}
+
+
+	.caption-style-4 .caption{
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		-webkit-transition:all 0.45s ease-in-out;
+		-moz-transition:all 0.45s ease-in-out;
+		-o-transition:all 0.45s ease-in-out;
+		-ms-transition:all 0.45s ease-in-out;
+		transition:all 0.45s ease-in-out;
+	}
+
+	.caption-style-4 img{
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		-ms-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+	}
+	.caption-style-4 .blur{
+		background-color: rgba(0,0,0,0.65);
+		height: 300px;
+		width: 300px;
+		z-index: 5;
+		position: absolute;
+	}
+
+	.caption-style-4 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	.caption-style-4 .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		text-align: center;
+		top:100px;
+	}
+
+@media only screen and (min-width: 960px;) {
+	.header, .content {
+		width: 960px;
+	}
+}
