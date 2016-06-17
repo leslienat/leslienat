@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Portfolio | Leslie Ochoa</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+<center>
+	<!-- Start Header -->
+	<div class="header">
+		<img alt="logo" id="logo" src="images/logo.svg">
+
+    <!-- Start Navigation Menu -->
+    <div class="nav">
+      <div class="mobilenav">&#9776; Menu</div>
+      <ul class="nul">
+			<a href="index.html"><li>Home</li></a>
+			<a href="About.html"><li>About</li></a>
+			<a href="Contact.html"><li>Contact</li></a>
+      </ul>
+    </div>
+    <script>
+      $('.mobilenav').on('click', function(){
+      $('.nul').toggleClass('showing'); 
+      });
+    </script> <!-- End Navigation Menu -->
+	</div> <!-- End Header -->
+
+	<!-- Start Content -->
+	<div class="content">
+		
+	</div> <!-- End Content -->
+
+	<!-- Start Footer -->
+	<div class="footer">
+		<p>&#169; 2016 Leslie Ochoa</p>
+	</div> <!-- End Footer -->
+</center>
+</body>
+</html>
