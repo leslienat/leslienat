@@ -30,8 +30,9 @@ body {
 
 p {
   	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  	font-size: 14px;
   	line-height: 1.5;
+  	font-size: 18px;
+  	font-weight: 300;
 }
 
 .header {
@@ -105,8 +106,8 @@ p {
 
 .content h2 {
 	margin-bottom: 40px;
-	font-family: "Roboto Slab", serif;
-	font-size: 30px;
+  	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 42px;
 }
 
 .caption-style-4{
