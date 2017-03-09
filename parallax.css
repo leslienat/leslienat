@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+*, a, abbr, acronym, address, area, article, aside, b, applet, audio 
+b, bdo, big, blockquote, body, button, center, caption, canvas, 
+caption, cite, code, col, colgroup, dd, del, details, dfn, div, 
+dd, dl, dt, em, embed, figcaption, figure, fieldset, footer, 
+form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, 
+html, i, iframe, images, img, ins, kbd, label, legend, li, 
+map, mark, menu, navigation, object, ol, output, p, param, pre, 
+q, ruby, samp, section, small, span, strong, strike, sub, summary, 
+sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, 
+tt, u, ul, var, video {
+	border:0;
+	margin:0; 
+	padding:0; 
+	vertical-align:baseline;
+}
+
+body {
+	height: 100%;
+	min-height: 1000px;
+}
+
+.content {
+		max-width: 960px;
+		margin: auto;
+		padding: 10px 0px 40px;
+}
+
+h3 {
+	color: #111;
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	padding: 50px 80px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p {
+	color: #777;
+	display: block;
+	font-family: "Lato", sans-serif;
+	font-size: 15px;
+	line-height: 27px;
+	text-align: justify;
+}
+
+/* Start Parallax */
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg1 {
+	background-image: url("images/nature-sunset-water-clouds.jpg");
+	height: 400px;
+}
+
+.bg2 {
+	background-image: url("images/pexels-photo-27986.jpg");
+}
+/* End Parallax*/
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
