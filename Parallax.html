@@ -5,14 +5,52 @@
 	<link rel="stylesheet" type="text/css" href="parallax.css">
 </head>
 <body>
-	<div class="bg1 parallax"></div>
+	<!-- Start Header -->
+	<div class="header">
+		<img alt="logo" id="logo" src="images/logo.svg">
+
+    <!-- Start Navigation Menu -->
+    <div class="nav">
+      <div class="mobilenav">&#9776; Menu</div>
+      <ul class="nul">
+			<a href="index.html"><li>Home</li></a>
+			<a href="About.html"><li>About</li></a>
+			<a href="Contact.html"><li>Contact</li></a>
+      </ul>
+    </div>
+    <script>
+      $('.mobilenav').on('click', function(){
+      $('.nul').toggleClass('showing'); 
+      });
+    </script> <!-- End Navigation Menu -->
+	</div> <!-- End Header -->
+
+	<!-- Start Content -->
+	<div class="bg1 parallax">
+		<div class="caption">
+			<span class="border">Art</span>
+		</div>
+	</div>
 	<div class="content">
 		<h3>Parallax Test</h3>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 	</div>
-	<div class="bg1 parallax"></div>
-	<div class="bg2 parallax"></div>
+	<div class="bg2 parallax">
+		<div class="caption">
+			<span class="border">Photography</span>
+		</div>
+	</div>
+	<div class="bg3 parallax">
+		<div class="caption">
+			<span class="border">Web Design</span>
+		</div>
+	</div> <!-- End Content-->
+
+	<!-- Start Footer -->
+	<div class="footer">
+		<p>&#169; 2016 Leslie Ochoa</p>
+	</div> <!-- End Footer -->
 </body>
 </html>
