@@ -47,7 +47,23 @@ p {
 	width: 100%;
 }
 
+.bin-border {
+	background-image: repeating-linear-gradient(
+		to right,
+		#62a8e2,
+		#69b959,
+		#62a8e2,
+		#69b959,
+		#62a8e2,
+		#69b959
+    );
+	background-size: 100% 10px;
+	background-position: 50% 100%;
+	min-height: 10px;
+}
+
 #logo {
+	margin: auto;
 	padding: 0.5%;
 }
 
