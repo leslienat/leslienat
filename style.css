@@ -16,23 +16,30 @@ tt, u, ul, var, video {
 	vertical-align:baseline;
 }
 
-html {
-	height: 100%;
-	width: 100%;
-}
-
 body {
 	background-color: #ECF9F2;
-	
-	margin: auto;
-	width: 100%;
+	height: 100%;
+	min-height: 1000px;
+}
+
+h3 {
+	color: #111;
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	padding: 50px 80px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 p {
-  	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  	line-height: 1.5;
-  	font-size: 18px;
-  	font-weight: 300;
+	color: #777;
+	display: block;
+	font-family: "Lato", sans-serif;
+	font-size: 15px;
+	line-height: 27px;
+	text-align: justify;
 }
 
 .header {
@@ -40,17 +47,24 @@ p {
 	width: 100%;
 }
 
-#logo {
-	padding: 0.5%;
+.bin-border {
+	background-image: repeating-linear-gradient(
+		to right,
+		#62a8e2,
+		#69b959,
+		#62a8e2,
+		#69b959,
+		#62a8e2,
+		#69b959
+    );
+	background-size: 100% 10px;
+	background-position: 50% 100%;
+	min-height: 10px;
 }
 
-/*.nav li {
-	display: inline-block;
-	font-family: "Helvetica, sans-serif";
-	font-size: 1.5em;
-	text-align: center;
-	text-transform: uppercase;
-	padding: 10px;
+#logo {
+	float: center;
+	padding: 0.5%;
 }
 
 /* Start Navigation Menu */
@@ -97,116 +111,95 @@ p {
 }
 /* End Navigation Menu */
 
+/* Start Social Icons */
+.social {
+	float: right;
+	font-size: 22px;
+}
+
+.fa {
+  padding: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    color: #b5a0cf;
+}
+
+.fa a {
+	
+}
+
+.fa-github, .fa-instagram, .fa-linkedin, .fa-tumblr, .fa-youtube {
+  color: #8d7ca1;
+}
+
+/* End Social Icons */
+
 .content {
-	color: #787878;
-	margin: auto;
-	text-align: left;
-	width: 960px;
-}
-
-.content h2 {
-	margin-bottom: 40px;
-  	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 42px;
-}
-
-.caption-style-4{
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-		
-}
-
-.caption-style-4 li{
-	float: left;
-	padding: 0px;
-	position: relative;
-	overflow: hidden;
-}
-
-.caption-style-4 li:hover .caption{
-	opacity: 1;
-}
-
-.caption-style-4 li:hover img{
-	opacity: 1;
-	transform: scale(1.15,1.15);
-	-webkit-transform:scale(1.15,1.15);
-	-moz-transform:scale(1.15,1.15);
-	-ms-transform:scale(1.15,1.15);
-	-o-transform:scale(1.15,1.15);
-}
-
-.caption-style-4 img{
-	margin: 0px;
-	padding: 0px;
-	float: left;
-	z-index: 4;
-}
-
-.caption-style-4 .caption{
-	cursor: pointer;
-	position: absolute;
-	opacity: 0;
-	-webkit-transition:all 0.45s ease-in-out;
-	-moz-transition:all 0.45s ease-in-out;
-	-o-transition:all 0.45s ease-in-out;
-	-ms-transition:all 0.45s ease-in-out;
-	transition:all 0.45s ease-in-out;
-}
-
-.caption-style-4 img{
-	-webkit-transition:all 0.25s ease-in-out;
-	-moz-transition:all 0.25s ease-in-out;
-	-o-transition:all 0.25s ease-in-out;
-	-ms-transition:all 0.25s ease-in-out;
-	transition:all 0.25s ease-in-out;
-}
-
-.caption-style-4 .blur{
-	background-color: rgba(0,0,0,0.65);
-	height: 300px;
-	width: 300px;
-	z-index: 5;
-	position: absolute;
-}
-
-.caption-style-4 .caption-text h1{
-	text-transform: uppercase;
-	font-size: 24px;
-}
-
-.caption-style-4 .caption-text{
-	z-index: 10;
-	color: #ffffff;
-	position: absolute;
-	width: 300px;
-	height: 300px;
-	text-align: center;
-	top:100px;
+		max-width: 960px;
+		margin: auto;
+		padding: 10px 0px 40px;
 }
 
 /* Start Parallax */
-section.module:last-child {
-  margin-bottom: 0;
+.parallax { 
+	position: relative;
+  	opacity: 0.75;
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-section.module.parallax {
-  height: 400px;
-  background-image: url("images/nature-sunset-water-clouds.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.bg1 {
+	background-image: url("images/bg1.jpeg");
+	height: 500px;
+}
+
+.bg2 {
+	background-image: url("images/bg2.jpeg");
+	height: 500px;
+}
+
+.bg3 {
+	background-image: url("images/bg3.jpeg");
+	height: 500px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 /* End Parallax*/
 
 .footer {
 	clear: both;
 	padding: 10px;
+}
+
+/* Start Media Display */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
 
 @media only screen and (min-width: 960px;) {
@@ -217,7 +210,7 @@ section.module.parallax {
 
 @media only screen and (max-width: 875px) {
   .nul {
-      max-height: 0;
+      max-height: 0px;
   }
    
   .showing {
@@ -238,3 +231,4 @@ section.module.parallax {
     }
 
 }
+/* End Media Display */

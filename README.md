@@ -1,6 +1,6 @@
-# leslienochoa
+# nats-ohchewy
 Personal Portfolio
 
 =====================
 
-[Click here for a preview](http://nats-ohchewy.github.io/Portfolio/).
+[Click here for a preview](http://leslienochoa.github.io/Portfolio/).
