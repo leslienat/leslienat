@@ -171,6 +171,16 @@ p {
 	height: 500px;
 }
 
+.bg4 {
+	background-image: url("images/bg4.jpeg");
+	height: 500px;
+}
+
+.contact_bg {
+	background-image: url("images/contact_bg.jpeg");
+	height: 500px;
+}
+
 .caption {
   position: absolute;
   left: 0;
