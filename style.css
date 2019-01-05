@@ -22,6 +22,16 @@ body {
 	min-height: 1000px;
 }
 
+a {
+  color: #68ACE4; 
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #98D264;
+}
+
 h3 {
 	color: #111;
 	font-family: "Lato", sans-serif;
@@ -177,7 +187,7 @@ p {
 }
 
 .contact_bg {
-	background-image: url("images/contact_bg.jpeg");
+	background-image: url("images/contact_bg.jpg");
 	height: 500px;
 }
 
@@ -240,5 +250,22 @@ p {
       display: block;
     }
 
+}
+
+@media screen and (max-width: 720px) {
+  .column-2-1, .column-2-2 {
+    clear: both;
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+  .column-2-1 {
+      float: left;
+    }
+
+    .column-2-2 {
+      float: right;
+    }
 }
 /* End Media Display */
