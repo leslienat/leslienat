@@ -105,7 +105,7 @@ p {
 	padding: 10px;
 }
 
-.nul li:hover{
+.nul li:hover {
 	color: #6c5a70;
 }
 
@@ -146,7 +146,6 @@ p {
 .fa-github, .fa-instagram, .fa-linkedin, .fa-tumblr, .fa-youtube {
   color: #8d7ca1;
 }
-
 /* End Social Icons */
 
 .content {
@@ -154,6 +153,50 @@ p {
 		margin: auto;
 		padding: 10px 0px 40px;
 }
+
+/* Start Image Set */
+.img_set {
+  position: relative;
+  width: 50%;
+}
+
+.img_set li {
+	display: inline-block;
+	list-style: none;
+	opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.img_set:hover {
+	opacity: 1;
+}
+
+.img_cap {
+	transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img_cap:hover {
+	opacity: 1;
+}
+
+.img_text {
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+/* End Image Set */
 
 /* Start Parallax */
 .parallax { 
