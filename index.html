@@ -1,84 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Parallax Test | Leslie Ochoa</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('images/comingsoon.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	opacity: 50%;
+}
+</style>
 <body>
-	<!-- Start Header -->
-	<div class="header">
-		<div class="bin-border"></div>
-		<img alt="logo" id="logo" src="images/logo.svg">
-		
-		<!-- Start Social Icons -->
-		<div class="social">
-			<a href="https://github.com/leslienochoa" target="_blank" class="fa fa-github"></a>
-	    	<a href="https://www.instagram.com/leslie.n.ochoa/" target="_blank" class="fa fa-instagram"></a>
-	    	<a href="https://www.linkedin.com/in/leslieochoahuerta" target="_blank" class="fa fa-linkedin"></a>
-	    	<a href="https://leslienochoa.tumblr.com/" target="_blank" class="fa fa-tumblr"></a>
-	    	<a href="https://www.youtube.com/channel/UCjNWxkDJP7uE74Tpz5OG8jw" target="_blank" class="fa fa-youtube"></a>
-	    </div> <!-- End Social Icons -->
-	    
-	    <!-- Start Navigation Menu -->
-	    <div class="nav">
-	      <div class="mobilenav">&#9776; Menu</div>
-	      <ul class="nul">
-				<a href="/"><li>Home</li></a>
-				<a href="About.html"><li>About</li></a>
-				<a href="Contact.html"><li>Contact</li></a>
-	      </ul>
-	    </div>
-	    <script>
-	      $('.mobilenav').on('click', function(){
-	      $('.nul').toggleClass('showing'); 
-	      });
-	    </script> <!-- End Navigation Menu -->
-	</div> <!-- End Header -->
 
-	<!-- Start Content -->
-	<div class="bg1 parallax">
-		<div class="caption">
-			<span class="border">Product Design</span>
-		</div>
-	</div>
-	<div class="content">
-		<ul class="img_set">
-			<li>
-				<img src="images/thumb-7.jpg">
-				<div class="img_cap">
-					<div class="img_text">Image 1</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<div class="content">
-		<h3>Parallax Test</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-	</div>
-	<div class="bg2 parallax">
-		<div class="caption">
-			<span class="border">Photography</span>
-		</div>
-	</div>
-	<div class="bg3 parallax">
-		<div class="caption">
-			<span class="border">Web Design</span>
-		</div>
-	</div>
-	<div class="bg4 parallax">
-		<div class="caption">
-			<span class="border">Art</span>
-		</div>
-	</div>
-	</div> <!-- End Content-->
-
-	<!-- Start Footer -->
-	<div class="footer">
-		<p>&#169; 2016 Leslie Ochoa</p>
-	</div> <!-- End Footer -->
+<div class="bgimg">
+  <div class="topleft">
+    <p>Leslie Nat</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>Portfolio site is in progress, but feel free to contact me with questions.</p>
+    <p>insta: <a href="https://www.instagram.com/leslie.nat.art/" target="_blank">@leslie.nat.art</a><br>fb: <a href="https://www.facebook.com/leslie.nat.art" target="_blank">leslie.nat.art</a></p>
+  </div>
+  <div class="bottomleft">
+    <p>Portfolio Site</p>
+  </div>
+</div>
 </body>
 </html>
