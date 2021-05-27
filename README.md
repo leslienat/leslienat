@@ -12,3 +12,5 @@ Creating a Portfolio to showcase work I have done related to design and art.
 [1]: http://www.instagram.com/leslie.nat.art
 [2]: http://www.facebook.com/leslie.nat.art
 [3]: https://www.linkedin.com/in/leslienat
+
+<img src="http://www.instagram.com/leslie.nat.art" data-canonical-src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" width="30 px"/>
